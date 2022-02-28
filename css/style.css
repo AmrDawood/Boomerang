@@ -1,0 +1,145 @@
+/* about Section */
+/* ------------- */
+#about .card i{
+    transition: transform 1s;
+}
+#about .card:hover i{
+    transform: translateY(-25%);
+} 
+/* ------------- */
+/* portfolio section */
+/* ----------------- */
+#portfolio .nav-pills .nav-link.active, .nav-pills .show>.nav-link{
+    color: #788487 !important;
+}
+#portfolio .nav-pills .nav-link:after{
+content:"/";
+color: #788487 ;
+position: absolute;
+right: 0;
+}
+#portfolio .nav-pills .nav-link:last-of-type:after{
+    content:"";
+
+    }
+#portfolio .image-container:hover img{
+    transform: translateY(-15%);
+}
+#portfolio .image-container img , #portfolio .image-detail{
+    transition: all 1s;
+}
+#portfolio .image-container:hover .image-detail{
+    top: 85% !important; 
+}
+/* ----------------- */
+/* services section */
+/* ----------------- */
+#services .card i{
+    transition: transform 1s;
+}
+#services .card:hover i{
+    transform: translateY(-25%);
+} 
+/* ----------------- */
+/* Team section */
+/* ----------------- */
+.team-member{
+    transition: transform 1s;
+}
+ .team-member:hover{
+    transform: translateY(-2%);
+}
+.layer{
+    opacity: .4;
+    transition: opacity 1s , top 1s ,bottom 1s;
+    /* bottom: 100%; */
+    top: -100%;
+    bottom: 100%;
+}
+.team-member:hover .layer{
+   opacity: .4;
+   top: 0;
+   bottom: 0;
+}
+.team-layer-social i{
+    transition: all .5s ease-in-out;
+}
+.team-layer-social i:hover{
+    color: #788487;
+    cursor: pointer;
+} 
+/* ----------------- */
+/* testimonial section */
+/* ----------------- */
+#testimonial{
+    background-image: url(../images/module-12.jpg);
+    background-size: cover ;
+    background-position: center center;
+    background-attachment: fixed;
+}
+ .testimonial-layer{
+    background-color: rgba(0, 0, 0,0.8);
+}
+#testimonial .dot button{  
+    width: 1.5rem;
+    height: 1.5rem;      
+}
+#testimonial button:hover{
+    border: .5px solid white;     
+}
+#testimonial .dot button:active{
+    border: .5px solid white;     
+}
+#testimonial button i{
+    color: white;
+}
+.arrow-left:hover {
+    transform: translateX(-20%);
+}
+.arrow-right:hover {
+    transform: translateX(20%);
+}
+.arrow-left,.arrow-right,.dot button{
+    transition: transform .5s ease-in-out , border .5s ease-in-out;
+}
+/* ----------------- */
+/* card section */
+/* ----------------- */
+#prices .card span::after{
+    content: " ";
+    background-color: #f0f0f0;
+    height: 2px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+#prices .card{
+    /* transform: translateY(-20%); */
+    transition: transform .5s ease-in-out;
+}
+#prices .card:hover{
+    transform: scale(1.03,1.03);
+}
+/* // Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) { 
+    #prices .row{
+        transform: translateY(-5%);
+    }
+ }
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
+    #prices .row{
+        transform: translateY(-20%);
+    }
+ }
+ /* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {  }
+
+/* // X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {  }
+
+/* // XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {  }
+
