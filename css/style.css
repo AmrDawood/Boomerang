@@ -1,3 +1,46 @@
+/* header Section */
+/* ------------- */
+#navebar {
+    border-bottom: 1px solid rgba(255, 255, 255, .1);
+}
+#navebar .nav-item a::after{
+    content: "";
+    position: absolute;
+    border-bottom: 2px solid black;
+    bottom: -41%;
+    left: 0;
+    width: 20%;
+    height: 20%;
+    transform: translateX(200%);
+    /* transition: width .5s ease-in-out; */
+}
+#navebar .nav-item a:hover::after {
+    width: 100%;
+    transform: translateX(0%); 
+}
+#navebar .nav-item a.active::after{
+    width: 100%;
+    transform: translateX(0%); 
+}
+
+.header-caption-layer{
+background-color: rgba(0, 0, 0,0.8);
+}
+header .carousel-inner .carousel-item:nth-child(1){
+    background-image: url(../images/module-1.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+header .carousel-inner .carousel-item:nth-child(2){
+    background-image: url(../images/module-3.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+header .carousel-inner .carousel-item:nth-child(3){
+    background-image: url(../images/module-25.jpg);
+    background-size: cover;
+    background-position: center center;
+}
 /* about Section */
 /* ------------- */
 #about .card i{
@@ -145,8 +188,31 @@ border: .5px solid #505cfd;
 #articles a:first-of-type:hover{
 color: #505cfd !important;
 }
-#statistcs i{
+/* ----------------- */
+/* statistics section */
+/* ----------------- */
+#statistics i{
     color: #505cfd;
+}
+/* ----------------- */
+/* footer section */
+/* ----------------- */
+footer{
+ background-color: #222;
+}
+.social-icon i{
+    transition: color .5s ease-in-out;
+}
+.social-icon i:hover{
+    cursor: pointer;
+    color: white;
+}
+.widget-layer{
+    transition: opacity .5s ease-in-out;
+}
+.widget-layer:hover{
+    cursor: pointer;
+    opacity: .6;
 }
 /* // Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) { 

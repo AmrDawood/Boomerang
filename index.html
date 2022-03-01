@@ -9,7 +9,95 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
     <title>Boomerang</title>
 </head>
-<body>
+<body data-bs-spy="scroll" data-bs-target="#navebar">
+
+  <nav id="navebar" class="navbar fixed-top navbar-expand-lg navbar-light bg-light fw-bold ">
+    <div class="container-fluid  py-1">
+      <a class="navbar-brand fs-4" href="#">Boomerang</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mx-auto mb-2 mb-lg-0 text-uppercase">
+          <li class="nav-item px-2">
+            <a class="nav-link active position-relative" aria-current="page" href="#header">Home</a>
+          </li>
+          <li class="nav-item px-2 position-relative">
+            <a class="nav-link" href="#about">about</a>
+          </li>
+          <li class="nav-item px-2">
+            <a class="nav-link position-relative" href="#portfolio">porfolio</a>
+          </li>
+          <li class="nav-item px-2">
+            <a class="nav-link position-relative" href="#services">services</a>
+          </li>
+          <li class="nav-item px-2">
+            <a class="nav-link position-relative" href="#team">team</a>
+          </li>
+          <li class="nav-item px-2">
+            <a class="nav-link position-relative" href="#articles">blog</a>
+          </li>
+          <li class="nav-item px-2">
+            <a class="nav-link position-relative" href="#">contact</a>
+          </li>                   
+        </ul>
+ 
+          <button class="navbar-toggler  d-none d-lg-block border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+ 
+
+      </div>
+    </div>
+  </nav>
+
+  <header id="header" class="vh-100 text-white">
+
+    <div id="carouselExampleCaptions" class="carousel slide " data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner vh-100 ">
+        <div class="carousel-item vh-100  active ">
+          <div class="header-caption-layer d-none d-md-flex flex-column justify-content-center align-items-center h-100">
+            <h1 class="fs-1">Your greatstorie starts here.</h1>
+            <p class="lead py-2 w-25">See how your users experience your website in realtime or viewtrends to see any changes in performance over time.</p>
+            <a href="" class="btn btn-primary py-3 px-4 rounded-pill fw-bold text-uppercase ">get started</a>
+          </div>
+        </div>
+        <div class="carousel-item vh-100 ">
+          <div class="header-caption-layer d-none d-md-flex flex-column justify-content-center align-items-center  h-100">
+            <h1 class="fs-1">Gear up to land somewhere new.</h1>
+            <p class="lead py-2 w-25">See how your users experience your website in realtime or viewtrends to see any changes in performance over time.</p>
+            <div>
+              <a href="" class="btn btn-primary py-3 px-4 rounded-pill fw-bold text-uppercase ">get started</a>
+              <a href="" class="btn btn-outline-light py-3 px-4 rounded-pill fw-bold text-uppercase ">learn more</a>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item vh-100 ">
+          <div class="header-caption-layer d-none d-md-flex flex-column justify-content-center align-items-center h-100">
+            <h1  class="fs-1">Third slide label</h1>
+            <p class="lead py-2 w-25">See how your users experience your website in realtime or viewtrends to see any changes in performance over time.</p>
+            <div>
+              <a href="" class="btn btn-light py-3 px-4 rounded-pill fw-bold text-uppercase">get started</a>
+              <a href="" class="btn btn-outline-light py-3 px-4 rounded-pill fw-bold text-uppercase">learn more</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </header>
 
     <section id="about" class="text-center border-bottom py-5">
       <div class="container">
@@ -631,7 +719,7 @@
       </div>
     </section>
 
-    <section id="statistcs" class="pt-5 bg-light">
+    <section id="statistics" class="pt-5 bg-light">
       <div class="container">
         <div class="row row-cols-1 row-cols-md-4 ">
             <div class="col">
@@ -671,12 +759,111 @@
       </div>
     </section>
 
-    <footer class="bg-dark text-white">
-      <div class="footer-column">
-        <h6>About us</h6>
-        <p class="lead">Map where your photos were taken and discover local points of interest. Map where your photos.</p>
-        
+    <footer class="bg-dark text-white pt-5 pb-4">
+      <div class="container ">
+        <div class="row row-cols-1 row-cols-lg-4 pb-5">
+            <div class="col">
+              <div class="footer-column">
+                <h6 class="text-uppercase">About us</h6>
+                <p class="text-secondary py-2">Map where your photos were taken and discover local points of interest. Map where your photos.</p>
+                <address class="list-group text-secondary pb-2">
+                    <span>Location:12 London Avenue, Suite 18</span>
+                    <span>Email:amrdawood91@gmail.com</span>
+                    <span>Phone:8 800 123 4567</span>
+                </address>
+                <div class="social-icon text-white-50 py-2">
+                  <i class="bi bi-facebook pe-1"></i>
+                  <i class="bi bi-twitter px-1"></i>
+                  <i class="bi bi-instagram px-1"></i>
+                  <i class="bi bi-pinterest px-1"></i>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="footer-column">
+                <h6 class="text-uppercase">recent posts</h6>
+                <ul class="list-group-flush ps-0">
+                  <li class="list-group-item bg-transparent ps-0">
+                      <a href="#" class="text-decoration-none text-white-50 " aria-current="true"> Map where your photos were taken and discover local points.</a>
+                      <br><time class="text-secondary" datetime="2022-3-1">mar 1, 2022</time>
+                  </li>
+                  <li class="list-group-item bg-transparent ps-0">
+                      <a href="#" class="text-decoration-none text-white-50">Map where your photos were taken and discover local points.</a>
+                      <br><time class="text-secondary" datetime="2022-5-5">may 5, 2020</time>
+                   </li>
+                  <li class="list-group-item bg-transparent ps-0">
+                      <a href="#" class="text-decoration-none text-white-50">Map where your photos were taken and discover local points.</a>
+                      <br><time class="text-secondary" datetime="2020-3-1">mar 1, 2020</time>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col">
+              <div class="footer-column">
+                <h6 class="text-uppercase">twitter feed</h6>                
+              </div>
+            </div>
+            <div class="col">
+              <div class="footer-column">
+                <h6 class="text-uppercase">portfolio</h6> 
+                <div class="container-fluid px-0">
+                  <div class="row row-cols-3 g-2 py-2">
+                    <div class="col">
+                      <div class="widget-container">
+                        <div class="widget-layer w-100 h-100">
+                          <img src="./images/widgets/1.jpg" class="img-fluid" alt="">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="widget-container">
+                        <div class="widget-layer w-100 h-100">
+                          <img src="./images/widgets/2.jpg" class="img-fluid" alt="">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="widget-container">
+                        <div class="widget-layer w-100 h-100">
+                          <img src="./images/widgets/3.jpg" class="img-fluid" alt="">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="widget-container">
+                        <div class="widget-layer w-100 h-100">
+                          <img src="./images/widgets/4.jpg" class="img-fluid" alt="">
+                        </div>
+                      </div>
+                    </div>                  
+                    <div class="col">
+                      <div class="widget-container">
+                        <div class="widget-layer w-100 h-100">
+                          <img src="./images/widgets/5.jpg" class="img-fluid" alt="">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="widget-container">
+                        <div class="widget-layer w-100 h-100">
+                          <img src="./images/widgets/6.jpg" class="img-fluid" alt="">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>               
+              </div>
+            </div>
+        </div>
       </div>
+      <div class="container-fluid border-top pt-4 px-0">
+        <div class="row">
+          <small class="text-secondary text-center">&copy;Boomerang, All Rights Reserved. coded with love by <a href="https://github.com/AmrDawood/Boomerang" class="text-white-50 text-decoration-none">AmrDawood</a> </small>
+        </div>
+      </div>
+
+
+
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
