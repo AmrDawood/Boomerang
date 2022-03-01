@@ -43,10 +43,10 @@ right: 0;
 /* ----------------- */
 /* Team section */
 /* ----------------- */
-.team-member{
+.team-member,.article-image-container{
     transition: transform 1s;
 }
- .team-member:hover{
+ .team-member:hover ,.article-image-container:hover{
     transform: translateY(-2%);
 }
 .layer{
@@ -80,7 +80,8 @@ right: 0;
  .testimonial-layer{
     background-color: rgba(0, 0, 0,0.8);
 }
-#testimonial .dot button{  
+
+#testimonial .dot button ,#clients-logo .dot button{  
     width: 1.5rem;
     height: 1.5rem;      
 }
@@ -120,6 +121,32 @@ right: 0;
 }
 #prices .card:hover{
     transform: scale(1.03,1.03);
+}
+
+/* ----------------- */
+/* clients logo section */
+/* ----------------- */
+.client-logo-container{
+    opacity: .6;
+ }
+ .client-logo-container:hover{
+     opacity: 1;
+ }
+#clients-logo .dot button{
+    color:#505cfd;
+
+}
+#clients-logo .dot button:hover{
+border: .5px solid #505cfd;
+}
+/* ----------------- */
+/* articles section */
+/* ----------------- */
+#articles a:first-of-type:hover{
+color: #505cfd !important;
+}
+#statistcs i{
+    color: #505cfd;
 }
 /* // Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) { 
